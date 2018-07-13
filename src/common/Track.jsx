@@ -13,10 +13,11 @@ const Track = (props) => {
   };
 
   const elStyle = {
+    visibility: included ? 'visible' : 'hidden',
     ...style,
     ...positonStyle,
   };
-  return included ? <div className={className} style={elStyle} /> : null;
+  return <div className={className} style={elStyle} />;
 };
 
 export default Track;
